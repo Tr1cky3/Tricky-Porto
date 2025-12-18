@@ -41,7 +41,11 @@ h4{
 }
 h3{
     color: var(--accent);
+    text-align: center;
+}
+li{
     text-align: left;
+    margin-bottom: 5px;
 }
 .container .profile-pic{
     width: 100px;
@@ -71,6 +75,7 @@ h3{
     min-height: 100vh;
     border-radius: 8px;
     text-align: center;
+    display: none
 }
 .sidebar2{
     grid-area: sidebar2;
