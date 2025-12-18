@@ -30,5 +30,5 @@ BtnMe.addEventListener('click', function(){
     }
 })
 BtnCnt.addEventListener('click', function(){
-    window.location.href = "https://linktr.ee/mrtricky";
+    window.open.href = "https://linktr.ee/mrtricky";
 })
