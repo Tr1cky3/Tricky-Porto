@@ -1,37 +1,68 @@
+:root{
+    --primary:#111;
+    --secondary:#222;
+    --bg:#f9f9f9;
+}
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: rgba(61, 25, 58, 0.63);
+}
+button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    color: white;
 }
 .container{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     gap: 12px;
     grid-template-areas:
-        "sidebar1 header sidebar2"
+        "header header header"
         "sidebar1 content sidebar2"
         "footer footer footer";
 }
 .header{
     grid-area: header;
     background-color: blueviolet;
-    min-height: 20vh;
+    min-height: 10vh;
+    border-radius: 8px;
+    text-align: center;
 }
 .sidebar1{
+    text-align: center;
     grid-area : sidebar1;
     background-color: aqua;
-    min-height: 80vh;
+    min-height: 100vh;
+    border-radius: 8px;
 }
 .sidebar2{
+    align-content: center;
     grid-area : sidebar2;
     background-color: aqua;
-    min-height: 80vh;
+    min-height: 100vh;
+    border-radius: 8px;
 }
 .content{
     grid-area: content;
     background-color: crimson;
-    min-height: 80vh;
+    min-height: 100vh;
+    border-radius: 8px;
+    text-align: center;
 }
 .footer{
     grid-area: footer;
     background-color: darkorange;
-    min-height: 20vh;
+    min-height: 10vh;
+    border-radius: 8px;
+    text-align: center;
 }
