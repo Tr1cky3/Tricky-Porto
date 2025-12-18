@@ -37,8 +37,10 @@ h5{
     stroke: none;
 }
 h4{
-    color: var(--accent);
-    margin-bottom: 10px;
+    font-style: italic;
+    color: white;
+    margin: 0;
+    stroke: none;
 }
 h3{
     color: var(--accent);
