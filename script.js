@@ -3,6 +3,8 @@ const sidebar2 = document.querySelector('.sidebar2');
 const sidebar1 = document.querySelector('.sidebar1');
 const BtnPro = document.getElementById('BtnPro');
 const BtnCnt = document.getElementById('BtnCnt');
+const BtnMe = document.getElementById('BtnMe');
+const iframe = document.querySelector('iframe');
 
 BtnGoal.addEventListener('click', function(){
     if(sidebar2.style.display === 'none'){
@@ -16,6 +18,13 @@ BtnPro.addEventListener('click', function(){
         sidebar1.style.display = 'block';
     } else{
         sidebar1.style.display = 'none';
+    }
+})
+BtnMe.addEventListener('click', function(){
+    if(iframe.style.display === 'none'){
+        iframe.style.display = 'block';
+    } else{
+        iframe.style.display = 'none';
     }
 })
 BtnCnt.addEventListener('click', function(){
