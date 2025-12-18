@@ -1,0 +1,37 @@
+body{
+    background-color: rgba(61, 25, 58, 0.63);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 12px;
+    grid-template-areas:
+        "sidebar1 header sidebar2"
+        "sidebar1 content sidebar2"
+        "footer footer footer";
+}
+.header{
+    grid-area: header;
+    background-color: blueviolet;
+    min-height: 20vh;
+}
+.sidebar1{
+    grid-area : sidebar1;
+    background-color: aqua;
+    min-height: 80vh;
+}
+.sidebar2{
+    grid-area : sidebar2;
+    background-color: aqua;
+    min-height: 80vh;
+}
+.content{
+    grid-area: content;
+    background-color: crimson;
+    min-height: 80vh;
+}
+.footer{
+    grid-area: footer;
+    background-color: darkorange;
+    min-height: 20vh;
+}
