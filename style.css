@@ -20,6 +20,7 @@ button{
     font-size: 16px;
     cursor: pointer;
     border-radius: 8px;
+    color: var(--text-main);
 }
 h1{
     text-align: center;
@@ -85,13 +86,15 @@ li{
     text-align: center;
     display: none; /* awalnya disembunyikan */
 }
-.container .content .about-me iframe{
-    display: none;
-    align-content: center;
-}
 .about-me{
-    margin-top: 20px;
     text-align: center;
+}
+.iframe-container{
+    width: 100%;
+    text-align: center;
+}
+.iframe-container iframe{
+    margin: 0 auto;
 }
 .content{
     grid-area: content;

@@ -23,8 +23,10 @@ BtnPro.addEventListener('click', function(){
 BtnMe.addEventListener('click', function(){
     if(iframe.style.display === 'none'){
         iframe.style.display = 'block';
+        iframe.src = "https://www.youtube.com/embed/0hTb6Yv_PV4?autoplay=1&mute=0";
     } else{
         iframe.style.display = 'none';
+        iframe.src = "";
     }
 })
 BtnCnt.addEventListener('click', function(){
